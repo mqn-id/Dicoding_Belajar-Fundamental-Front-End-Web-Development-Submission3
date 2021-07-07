@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu' !important;
+    font-size: 98%;
+ }
+  
+ body {
+   font-family: 'Ubuntu', sans-serif;
+   margin: 0;
+   padding: 0;
+ }
+  
+ main {
+   padding: 10px;
+   overflow: auto;
+}
+  
+ club-list {
+    display: block;
+    margin-top: 32px;
+    width: 100%;
+    padding: 16px;
+ }
+ 
+ h2 {
+   color: #ff5000
+}
+
+h3 {
+   color: #2f56a3
+}
+
+h4 {
+  color: #2f56a3;
+  text-align: left;
+  margin-bottom: -1px;
+}
+
+.card {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-top: 5px;
+  text-align: justify;
+}
+.cardmaps {
+   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 10px;
+   padding: 10px 10px;
+   margin-top: 5px;
+   text-align: justify;
+ }
+
+#content {
+  float: right;
+  width: 70%;
+  height: 550px;
+}
+
+aside {
+  float: left;
+  width: 30%;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+      width: 100%;
+      padding: 0;
+  }
+}
+
+.flex-container-column {
+  display: flex;
+  /* properti pendukung */
+  flex-direction: column;
+  margin: 5px auto;
+  text-align: left;
+}
+
+.flex-container-row {
+  display: flex;
+}
+
+.box {
+  flex-basis: 33,33%;
+  /* properti pendukung */
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+}
+
+.double {
+  flex-basis: 50%;
+  text-align: left;
+  padding: 0px;
+}
+
+@media screen and (max-width: 200px) {
+  .box {
+      padding: 10px;
+  }
+}
+
+@media screen and (max-width: 150px) {
+  .double {
+      padding: 10px;
+  }
+}
+
+#map {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 10px;
+   padding: 10px 10px;
+   margin-top: 0;
+ }
